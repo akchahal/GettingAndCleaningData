@@ -9,7 +9,7 @@ The data used here is collected from the accelerometers from the Samsung Galaxy 
 * Set the working directory
 * Load the train and test datasets
 * Load the activity and feature datasets 
-* Merger activity and subject columns with t=respective test and train datasets
+* Merge activity and subject columns with the respective test and train datasets
 * Now merge the two datasets -train and test
 * Subset the merged dataset keeping only those columns which reflect a mean or standard deviation
 * Converts the activity and subject columns into factors
