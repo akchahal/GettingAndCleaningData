@@ -2,7 +2,7 @@
 
 **The variabes used in R script run_analysis.R:**
 
-*trainX: data loaded from file - X_train.txt 
+* trainX: data loaded from file - X_train.txt 
 *trainY: data loaded from file - Y_train.txt 
 *trainSubject: data loaded from file - subject_train.txt   
 *testX: data loaded from file - X_test.txt
