@@ -32,7 +32,7 @@
   activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
   features <- read.table("UCI Har Dataset/features.txt")
   
-  ##Add column names to test and rain datasets
+  ##Add column names to test and train datasets
   colnames(trainX) <- features[,2]
   colnames(trainY) <- "activityId"
   colnames(trainSubject) <- "subjectId"
@@ -49,7 +49,7 @@
   ##Now row bind these 2 datasets to get the merged dataset
   mergedData <- rbind(trainData, testData)
   
-  ##dim(setAllInOne)
+  ##dim(mergedData)
   ##[1] 10299   563
   
   #--------------------------------------------------------------------------------  
@@ -84,6 +84,6 @@
   tidyData <- dcast(meltedData, subjectId + activityId ~ variable, mean)
   write.table(tidyData, "tidy.txt", row.names = FALSE, quote = FALSE)
   
-  ##dim(mergedDataset)
+  ##dim(tidyData)
   ##[1] 180    81
   
